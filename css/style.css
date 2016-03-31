@@ -16,16 +16,16 @@
 
 /*containers*/
 
-.bodyOne, .bodyThree {
+.bodyOne, .bodyThree, .bodyFive {
   background-color: #EAEAEA;
 }
 
 /*rows*/
 
-.bodyOne .row, .bodyTwo .row {
+.bodyOne .row, .bodyTwo .row, .bodyFour .row, .bodyFive .row {
   height: 600px;
 }
-.bodyThree .row {
+.bodyThree .row, .bodySix .row {
   height: 500px;
 }
 
@@ -60,6 +60,7 @@
   background-size: 375px 374px;
 }
 .bodyThree .row .imageContent {
+  /*prepare div for two background images*/
   position: relative;
   overflow: hidden;
 }
@@ -81,4 +82,26 @@
   width: 280px;
   height: 546px;
   background-size: 280px 546px;
+}
+.bodyFour .row {
+  padding: 0 60px;
+}
+.bodyFour .row .imageContent {
+  /*set background image*/
+  background: white url(../Images/4389f445433f2b4e0524a6563bbbb0c1.png) no-repeat center center;
+  background-size: cover;
+}
+.bodyFive .row .imageContent {
+  /*set background image*/
+  background: #EAEAEA url(../Images/c638611dd40327434266bd1fc8bdc2c6.png) no-repeat center center;
+  background-size: 473px 397px;
+}
+.bodySix .row .imageContent {
+  /*set background image*/
+  margin: 40px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #EAEAEA url(../Images/c7c2d0cb723a59aaf395ce5ccea53f00.png) no-repeat center right;
+  background-size: cover;
+  overflow: hidden;
 }
