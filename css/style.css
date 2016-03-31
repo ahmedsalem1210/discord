@@ -1,16 +1,32 @@
+.textContent h2 {
+  letter-spacing: 0.025em;
+  color: rgb(115, 139, 215);
+  position: relative;
+  line-height: 1.2em;
+  font-weight: 500;
+  font-size: 30px;
+}
+.textContent p {
+  line-height: 1.5em;
+  /*margin-top: 36px;*/
+  font-weight: 500;
+  font-size: 17px;
+  color: #737f8d;
+}
+
 /*containers*/
 
-.container-fluid {
-  padding: 60px 0;
-}
 .bodyOne, .bodyThree {
   background-color: #EAEAEA;
 }
 
 /*rows*/
 
-.container-fluid .row {
+.bodyOne .row, .bodyTwo .row {
   height: 600px;
+}
+.bodyThree .row {
+  height: 500px;
 }
 
 /*text contents*/
@@ -30,6 +46,7 @@
   height: inherit;
 }
 .bodyOne .row .imageContent {
+  margin: 60px 0;
   /*set background image*/
   background: #EAEAEA url(../Images/7a8f095edaae359508629bd44abe1b70.png) no-repeat left center;
   background-size: cover;
@@ -43,16 +60,25 @@
   background-size: 375px 374px;
 }
 .bodyThree .row .imageContent {
-  /*set two background images*/
-  background-image: url("../Images/header2.png"), url("../Images/50221720e75e9bb0e901731790a300cc.png");
-  background-position: bottom left, center right;
-  background-repeat: no-repeat no-repeat;
+  position: relative;
   overflow: hidden;
 }
-
-/*
-background-image: url("http://www.fillmurray.com/600/300"), url("http://www.fillmurray.com/600/300");
-background-position: top left, center right;
-background-repeat: no-repeat no-repeat;
-height: 600px;
-*/
+.bodyThree .row .imageContent .leftImageBlock {
+  /*set two background images*/
+  position: absolute;
+  top: 190px;
+  left: 90px;
+  background: url("../Images/header2.png");
+  width: 266px;
+  height: 524px;
+  background-size: 266px 524px;
+}
+.bodyThree .row .imageContent .rightImageBlock {
+  position: absolute;
+  top: -210px;
+  left: 210px;
+  background: url("../Images/50221720e75e9bb0e901731790a300cc.png");
+  width: 280px;
+  height: 546px;
+  background-size: 280px 546px;
+}
