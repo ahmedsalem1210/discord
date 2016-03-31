@@ -1,0 +1,124 @@
+.table {
+  width: 830px;
+  margin: auto;
+  color: #9eacb5;
+  border-collapse: inherit;
+}
+tr td:nth-child(1) {
+  text-align: left;
+}
+tr td:nth-child(2):not(.back) {
+  border-right: 4px solid #6B82CB;
+  border-left: 4px solid #6B82CB;
+  color: #6B82CB;
+}
+
+td {
+  text-align: center;
+  height: 45px;
+  vertical-align: top;
+}
+#img {
+  margin-top: 10px;
+}
+.bot {
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+.back {
+  background-color: #6B82CB;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: 4px solid #6B82CB;
+}
+.glyphicon-ok {
+  font-size: 1.8em;
+  font-weight: lighter;
+}
+.first .lol {
+  background-color: #6B82CB;
+}
+p {
+  margin: 0px;
+  margin-top: 7px;
+}
+.table > tbody > tr:nth-child(2) > td {
+  border-top: 0px solid black;
+}
+.txt {
+  margin-top: 12px;
+}
+.table > tbody > tr > td:not(.back), .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 0px;
+}
+.table > tbody > tr > .top{
+border-top: 0px solid black;
+}
+.down {
+  background-color: #6B82CB;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: 4px solid #6B82CB;
+}
+
+
+
+.up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transpa {
+  width: 65%;
+  margin: auto;
+
+}
+.footer {
+  background-color: #282B30;
+}
+
+.btn-success {
+  width: 270px;
+  border-radius: 20px;
+  height: 40px;
+  margin: 50px;
+  background-color: #3CA374
+}
+.foot-down {
+  width: 85%;
+  border-top: 1px solid rgb(89, 89, 89);
+margin: auto;
+display: flex;
+justify-content: center;
+color: rgb(119, 119, 119);
+font-size: 0.9em;
+flex-wrap: wrap;
+}
+
+.foot-down img {
+  margin: 50px;
+width: 200px;
+height: 90px;
+}
+
+.vert {
+  color: #3EB581;
+}
+.foot-left{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+
+}
+.foot-mid{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+
+}
+.foot-right{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+
+}
