@@ -1,0 +1,58 @@
+/*containers*/
+
+.container-fluid {
+  padding: 60px 0;
+}
+.bodyOne, .bodyThree {
+  background-color: #EAEAEA;
+}
+
+/*rows*/
+
+.container-fluid .row {
+  height: 600px;
+}
+
+/*text contents*/
+
+.row .textContent {
+  /*center contained title and paragraphs vertically*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*center contained title and paragraphs horizontally*/
+  padding: 0 90px;
+}
+
+/*image contents*/
+
+.imageContent {
+  height: inherit;
+}
+.bodyOne .row .imageContent {
+  /*set background image*/
+  background: #EAEAEA url(../Images/7a8f095edaae359508629bd44abe1b70.png) no-repeat left center;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+.bodyTwo .row .imageContent {
+  /*set background image*/
+  background: white url(../Images/620cbc7437f078f413be90840891c36d.png) no-repeat center center;
+  background-size: 375px 374px;
+}
+.bodyThree .row .imageContent {
+  /*set two background images*/
+  background-image: url("../Images/header2.png"), url("../Images/50221720e75e9bb0e901731790a300cc.png");
+  background-position: bottom left, center right;
+  background-repeat: no-repeat no-repeat;
+  overflow: hidden;
+}
+
+/*
+background-image: url("http://www.fillmurray.com/600/300"), url("http://www.fillmurray.com/600/300");
+background-position: top left, center right;
+background-repeat: no-repeat no-repeat;
+height: 600px;
+*/
